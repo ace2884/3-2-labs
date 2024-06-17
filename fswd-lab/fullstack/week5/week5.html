@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script >
+        function validate(){
+            var fname = document.reg_form.fname;
+            var lname =document.reg_form.lname;
+            var gender = document.reg_form.gen;
+            var mobile= document.reg_form.mob;
+            var email=document.reg_form.email;
+            var submit=document.reg_form.submit;
+            if (fname.value.length ==0|| lname.value.length==0 ||gender.value.length==0){
+                alert("Enter all the fields");
+                return false;
+            }
+            var alpha=/^[A-Za-z]+$/;
+            if (!fname.value.match(alpha)||!lname.value.match(alpha)){
+                alert("Enter valid first and last name")
+                return false;
+            }
+            if(mobile.value.length != 10){
+                alert("Enter 10 digit mobile no");
+                return false;
+            }
+            var validregx= /^[a-zA-Z0-9.!#$%&+/=?^_'{|}~-]+@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/;
+            if(email.value.match(validregex)){
+                alert("enter valid email id");
+                return false;
+
+            }   
+            if (submit.value=validate){
+                alert("registered sucessfully");
+                return true;
+            }         
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <form action="" onsubmit="return validate()" name="reg_form">
+        <table border="1">
+            <thread>
+                <th colspan="2"> registration form validation</th>
+            </thread>
+            <tbody>
+                <tr>
+                    <td> First name:</td>
+                    <td><input type="text" id="fname"></td>
+
+                </tr>
+                <tr>
+                    <td>last name:</td>
+                    <td><input type="text" id="lname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>gender :</td>
+                    <td>male <input type="radio" id="gen" name="gen">Female <input type="radio" id="gen" name="gen"></td>
+                </tr>
+                <tr>
+                    <td>Mobile no:</td>
+                    <td><input type="text" id="mob"></td>
+
+                </tr>
+                <tr>
+                    <td>email:</td>
+                    <td><input type="text" id="email"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" onclick="confSubmit(this.form);" value="registration"/></td>
+                    <td><input type="submit" value="rest"/></td>
+                </tr>
+            </tbody>
+        </table>
+        </form>
+    </center>
+    
+</body>
+</html>

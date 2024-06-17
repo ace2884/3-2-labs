@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="myCarousel" class="carousal slide">
+<ol class="carousel-indicators">
+    <li class="item1 active">
+        <li class="item2">
+            <li class="item3">
+
+            </li>
+        </li>
+    </li>
+</ol>   
+<div  class="carousel-inner" role="listbox">
+    <div class="item active">
+        <img src="img1.jpg" alt="image1" width="100%" height="100%">
+    </div>
+    <div class="item">
+        <img src="img2.jpg" alt="image2" width="100%" height="100%">
+    </div>
+    <div class="item">
+        <img src="img3.jpg" alt="image2" width="100%" height="100%">
+    </div>
+</div>
+<a class="left carousel-control" href="#myCarousel" role="button">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">prev</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">prev</span>
+</a>
+
+       </div>
+   </div>
+   <script>
+               $(document).ready(function(){
+           $("#myCarousel").carousel();
+           $(".item1").click(function(){
+               $("#myCarousel").carousel(0);
+           })
+           $(".item2").click(function(){
+               $("#myCarousel").carousel(1); 
+       })
+       $(".item3").click(function(){
+               $("#myCarousel").carousel(2);
+       })
+       $(".left").click(function(){
+       $("#myCarousel").carousel("prev");
+
+       })
+       $(".right").click(function(){
+       $("#myCarousel").carousel("next");
+
+       })
+    });
+
+
+
+
+</script>
+</body>
+</html>
