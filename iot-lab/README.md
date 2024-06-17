@@ -1,36 +1,3 @@
-# Node MCU
-
-![Screenshot 2024-06-11 195139](https://github.com/ace2884/iot-lab/assets/119153850/c7c70c59-1401-4268-aebd-4177a1891621)
-
-
-# Raspberry pi
-
-![WhatsApp Image 2024-06-11 at 18 24 38_7c8443b7](https://github.com/ace2884/iot-lab/assets/119153850/bcec4a89-b913-4535-9194-ae5bf818b135)
-
-
-# Arduino
-
-![WhatsApp Image 2024-06-11 at 18 24 37_08e26ca5](https://github.com/ace2884/iot-lab/assets/119153850/fd1089c2-b561-4ed6-b7d3-02e3fc7c5404)
-
-# Rfid pin diagram
-
-![WhatsApp Image 2024-06-11 at 18 27 48_993f6370](https://github.com/ace2884/iot-lab/assets/119153850/96ad99d6-b376-4718-85a6-1f865e24beba)
-
-
-# Tcp header format
-
-![image](https://github.com/ace2884/iot-lab/assets/119153850/9b548c9d-fed1-4224-aa6c-0de2043a2903)
-
-
-# UDP header format
-
-![image](https://github.com/ace2884/iot-lab/assets/119153850/3a7ef4d2-ba9a-4362-bb42-8c299720f719)
-
-
-# Differences between TCP and UDP
-
-![image](https://github.com/ace2884/iot-lab/assets/119153850/fcf2b630-f475-49ef-a33a-85986a715082)
-
 
 # week-3 (transfer sensor data to a smart phone using bluetooth)
 
